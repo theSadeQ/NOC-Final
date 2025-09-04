@@ -1,0 +1,15 @@
+id: P9
+title: Rosenbrock minimisation
+objective: Minimise f(x) = (1 - x1)^2 + 100*(x2 - x1^2)^2
+variables:
+  - x ∈ ℝ^2
+constraints: []
+data:
+  f_expr: (1 - x(1)).^2 + 100*(x(2) - x(1).^2).^2
+  x0_vec: [-1.2; 1]
+expected: [1, 1]
+tolerance: 1e-3
+solver_path: fmincon
+gui_preset: wrappers/presets/P9.mat
+notes: Standard Rosenbrock valley problem.
+sources: NOC-Homework9.pdf

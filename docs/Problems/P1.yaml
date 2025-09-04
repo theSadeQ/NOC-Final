@@ -1,0 +1,16 @@
+id: P1
+title: Root of x^2-2
+objective: Find x such that f(x)=0
+variables:
+  - x ∈ ℝ
+constraints: []
+data:
+  f_expr: x.^2 - 2
+  df_expr: 2*x
+  x0: 1
+expected: 1.4142135623730951
+tolerance: 1e-8
+solver_path: opt.root
+gui_preset: wrappers/presets/P1.mat
+notes: Simple quadratic root.
+sources: NOC-Homework1.pdf

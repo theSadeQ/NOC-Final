@@ -1,0 +1,16 @@
+id: P2
+title: Root of x^3 - x - 2
+objective: Find x such that f(x)=0
+variables:
+  - x ∈ ℝ
+constraints: []
+data:
+  f_expr: x.^3 - x - 2
+  df_expr: 3*x.^2 - 1
+  x0: 1
+expected: 1.52137970680457
+tolerance: 1e-8
+solver_path: opt.root
+gui_preset: wrappers/presets/P2.mat
+notes: Cubic root near 1.52.
+sources: NOC-Homework2.pdf

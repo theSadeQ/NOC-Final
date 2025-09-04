@@ -1,0 +1,16 @@
+id: P3
+title: Solve Rosenbrock system
+objective: Solve F(v)=0 for v ∈ ℝ^2
+variables:
+  - v ∈ ℝ^2
+constraints: []
+data:
+  F_expr: "[1 - v(1); 100*(v(2) - v(1)^2)]"
+  J_expr: "[-1, 0; -200*v(1), 100]"
+  x0_vec: [-1.2; 1]
+expected: residual_norm < 1e-6
+tolerance: 1e-6
+solver_path: opt.lineSearch
+gui_preset: wrappers/presets/P3.mat
+notes: Rosenbrock nonlinear system solved with Newton and line search.
+sources: NOC-Homework3.pdf

@@ -1,0 +1,16 @@
+id: P7
+title: Root of cos(x) - x
+objective: Find fixed point of cos(x)
+variables:
+  - x ∈ ℝ
+constraints: []
+data:
+  f_expr: cos(x) - x
+  df_expr: -sin(x) - 1
+  x0: 1
+expected: 0.73908513321516
+tolerance: 1e-8
+solver_path: opt.root
+gui_preset: wrappers/presets/P7.mat
+notes: Uses Newton method on cos(x)-x; root near 0.739.
+sources: NOC-Homework7.pdf

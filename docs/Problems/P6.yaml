@@ -1,0 +1,14 @@
+id: P6
+title: Lunar landing collocation demo
+objective: Transcribe and solve a toy lunar landing problem
+variables:
+  - state and control trajectories
+constraints: []
+data:
+  N: 10
+expected: NOT_IMPLEMENTED
+tolerance: 0
+solver_path: opt.optimalControl
+gui_preset: wrappers/presets/P6.mat
+notes: The lunar landing module is a placeholder; expect NOT_IMPLEMENTED.
+sources: NOC-Homework6.pdf

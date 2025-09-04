@@ -1,0 +1,17 @@
+id: P8
+title: Simple constrained minimisation
+objective: Minimise x1^2 + x2^2 subject to x1 >= 0, x2 >= 0, x1 + x2 >= 1
+variables:
+  - x ∈ ℝ^2
+constraints:
+  - x1 >= 0
+  - x2 >= 0
+  - x1 + x2 >= 1
+data:
+  x0_vec: [0.5; 0.5]
+expected: NOT_IMPLEMENTED
+tolerance: 0
+solver_path: opt.barrier
+gui_preset: wrappers/presets/P8.mat
+notes: The barrier solver is a stub; expect status NOT_IMPLEMENTED.
+sources: NOC-Homework8.pdf

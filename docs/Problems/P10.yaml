@@ -1,0 +1,16 @@
+id: P10
+title: Root of sin(x) - 0.5
+objective: Find x such that sin(x) = 0.5
+variables:
+  - x ∈ ℝ
+constraints: []
+data:
+  f_expr: sin(x) - 0.5
+  df_expr: cos(x)
+  x0: 1
+expected: 0.5235987755983
+tolerance: 1e-8
+solver_path: opt.root
+gui_preset: wrappers/presets/P10.mat
+notes: Root near π/6.
+sources: NOC-Homework10.pdf
